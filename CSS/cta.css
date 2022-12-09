@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background: #4b6cb7;
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+    background: linear-gradient(to right, #182848, #4b6cb7);
+}
+#nine{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    margin-top: 10rem;
+}
+#nine h1{
+    font-size: 160px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+    background: url(/Images/paisajes-de-yosemite-46208063.jpg) center no-repeat; -webkit-text-fill-color: transparent; -webkit-background-clip: text; background-clip: text;
+    animation-name: numero;
+    position: relative;
+    animation-duration: 4s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    }
+
+@media (max-width:576px){
+    .cuatrocientos{
+    font-size: 10em;
+    font-style: italic;
+    text-shadow: 2px 4px 6px #919191;
+    font-weight: bold;
+    animation-name: cuatro;
+    animation-duration: 4s;
+    position: relative;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    }
+}
+@keyframes cuatro {
+    0%{left: 0 }
+    50% {
+        -webkit-text-fill-color: #ccc;
+    }
+    75% {
+        top: 300px;
+    }
+    100% {
+        top:0;
+    }
+}
+@keyframes numero {
+    from{
+        left: 0px;
+    }
+    50%{
+font-size: 6em;
+    }
+    to{
+    transform: rotate(20deg); 
+    -webkit-text-fill-color: whitesmoke;
+    }
+}
